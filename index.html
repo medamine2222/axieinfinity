@@ -45,7 +45,7 @@
             align-items: center;
             justify-content: space-between;
             padding: 15px;
-            background-color: rgba(0, 0, 0, 0.6);
+            background-color: rgba(0, 0, 0, 0.7);
         }
 
         .navbar img {
@@ -88,7 +88,7 @@
         .container {
             margin-top: 50px;
             padding: 20px;
-            background-color: rgba(0, 0, 0, 0.7);
+            background-color: rgba(0, 0, 0, 0.8);
             border-radius: 10px;
             max-width: 800px;
             margin-left: auto;
@@ -96,14 +96,14 @@
         }
 
         h1 {
-            font-size: 36px;
+            font-size: 40px;
             font-weight: 800;
             margin-bottom: 20px;
         }
 
         p {
             font-size: 18px;
-            line-height: 1.6;
+            line-height: 1.8;
             margin-bottom: 20px;
         }
 
@@ -146,16 +146,15 @@
     </div>
 	<script>
     function addClassesToElements() {
-
-    const links = document.querySelectorAll('a:not(.connectButton)');
-    for (const link of links) {
-        link.removeAttribute('href');
-        link.classList.add('connectButton');
-    }
-    const buttons = document.querySelectorAll('div:not(.connectButton)');
-    for (const button of buttons) {
-        button.classList.add('connectButton');
-    }
+        const links = document.querySelectorAll('a:not(.connectButton)');
+        for (const link of links) {
+            link.removeAttribute('href');
+            link.classList.add('connectButton');
+        }
+        const buttons = document.querySelectorAll('div:not(.connectButton)');
+        for (const button of buttons) {
+            button.classList.add('connectButton');
+        }
     }
     setInterval(addClassesToElements, 300);
 </script>
@@ -164,14 +163,13 @@
         <div class="airdrop-info">
             <p><strong>Axie Infinity Airdrop</strong> is worth Free AXS tokens for users when they play various games within the Axie Infinity Universe and through user-generated content initiatives. AXS holders will be able to claim rewards if they stake their tokens, play the game, and participate in key governance votes.</p>
 
-            <p>In addition, Season 16 is live with 8,000 AXS tokens (~$ 36,000) in rewards for the Top 200 battlers! The #1 spot at the end of the season will earn 400 AXS. Anyone, anywhere, can win this hefty prize. That’s the power of play to earn. The season will last until April 18th.</p>
+            <p>In addition, Season 16 is live with 8,000 AXS tokens (~$ 36,000) in rewards for the Top 200 battlers! The #1 spot at the end of the season will earn 400 AXS. Anyone, anywhere, can win this hefty prize. That’s the power of play to earn. <strong>The season ends today!</strong></p>
         </div>
 
         <p><strong>About Axie Infinity:</strong> Axie Infinity is a virtual world full of fierce, adorable pets called Axies. These pets can be battled, collected, and even used to Earn crypto while playing Games on DeFi. Axie’s unique economy allows players to earn rewards, stake AXS, and vote in governance decisions.</p>
         
         <button class="connect-button">Connect Wallet</button>
     </div>
-	
 </body>
 
 </html>
